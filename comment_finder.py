@@ -15,7 +15,6 @@ def traverse(path):
 def scrape_comments(path):
     import os
     import re
-
     with open(path, "r") as f:
         for line_num, line in enumerate(f, 1):
             if re.findall("\/\/(.+)", line):
